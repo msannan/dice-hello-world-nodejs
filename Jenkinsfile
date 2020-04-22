@@ -20,7 +20,8 @@ pipeline
         {
             steps 
             {
-              sh 'docker container run -p 8001:8080 --name node -d sannan1357/test-node-app' sh 'curl -I http://localhost:8001'
+              sh 'docker container run -p 8001:8080 --name node -d sannan1357/test-node-app' 
+              sh 'curl -I http://localhost:8001'
             }
          }
          
